@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimony Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="details">
+        <h1>welcome to matramony page</h1>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="religion">Religion</label>
+            <input type="text" id="religion" name="religion">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </form>
+        <button onclick="submit()"  type="submit">Submit Details</button>
+        <h1 id="text"></h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
